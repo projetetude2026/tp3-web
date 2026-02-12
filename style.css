@@ -1,9 +1,16 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f3f3;
+  color: #111;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 25px 60px;
 }
+
 .logo {
   font-weight: bold;
   font-size: 18px;
