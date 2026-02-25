@@ -81,3 +81,53 @@ nav a.active {
   height: auto;
   border: 3px solid black;
 }
+
+/* SECTION TÉMOIGNAGES */
+.testimonials {
+  padding: 80px 60px;
+}
+
+.testimonials h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* CARTE */
+.card {
+  background: #f8f8f8;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  background: #ddd;
+  border-radius: 50%;
+}
+
+.card p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
