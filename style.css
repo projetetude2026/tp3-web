@@ -71,3 +71,13 @@ nav a.active {
   background-color: white;
   color: black;
 }
+
+.hero-image {
+  flex: 1.5;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border: 3px solid black;
+}
