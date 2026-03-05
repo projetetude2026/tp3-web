@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-     <header>
+    <header>
       <div class="logo">LOGO</div>
       <nav>
         <a href="index.html">Accueil</a>
@@ -16,6 +16,99 @@
         <a href="commande.html">Ma commande</a>
       </nav>
     </header>
+    <h1>Réservation</h1>
+
+    <form action="confirmation.html" method="get">
+      <!-- Informations personnelles -->
+      <fieldset>
+        <legend>Informations du client</legend>
+
+        <label for="prenom">Prénom *</label><br />
+        <input type="text" id="prenom" name="prenom" required /><br /><br />
+
+        <label for="nom">Nom *</label><br />
+        <input type="text" id="nom" name="nom" required /><br /><br />
+
+        <label for="telephone">Téléphone *</label><br />
+        <input
+          type="tel"
+          id="telephone"
+          name="telephone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          placeholder="123-456-7890"
+          required
+        /><br /><br />
+
+        <label for="courriel">Courriel</label><br />
+        <input type="email" id="courriel" name="courriel" /><br /><br />
+
+        <input type="checkbox" id="infolettre" name="infolettre" />
+        <label for="infolettre">Je souhaite m'inscrire à l’infolettre</label>
+      </fieldset>
+
+      <br />
+
+      <!-- Détails de la réservation -->
+      <fieldset>
+        <legend>Détails de la réservation</legend>
+
+        <label for="personnes">Nombre de personnes *</label><br />
+        <input
+          type="number"
+          id="personnes"
+          name="personnes"
+          min="1"
+          required
+        /><br /><br />
+
+        <label for="date">Date de la réservation *</label><br />
+        <input type="date" id="date" name="date" required /><br /><br />
+
+        <p>Lieu de la réservation *</p>
+        <input
+          type="radio"
+          id="salle"
+          name="lieu"
+          value="Salle à manger"
+          required
+        />
+        <label for="salle">Salle à manger</label><br />
+
+        <input type="radio" id="terrasse" name="lieu" value="Terrasse" />
+        <label for="terrasse">Terrasse</label><br /><br />
+
+        <label for="heure">Heure de la réservation *</label><br />
+        <select id="heure" name="heure" required>
+          <option value="">-- Sélectionnez une heure --</option>
+          <option>12:00</option>
+          <option>12:30</option>
+          <option>13:00</option>
+          <option>13:30</option>
+          <option>17:00</option>
+          <option>17:30</option>
+          <option>18:00</option>
+          <option>18:30</option>
+          <option>19:00</option>
+          <option>19:30</option>
+          <option>20:00</option>
+          <option>20:30</option>
+          <option>21:00</option></select
+        ><br /><br />
+
+        <label for="commentaire">Commentaire supplémentaire</label><br />
+        <textarea
+          id="commentaire"
+          name="commentaire"
+          rows="4"
+          cols="40"
+        ></textarea>
+      </fieldset>
+
+      <br />
+
+      <input type="submit" value="Réserver" />
+      <input type="reset" value="Effacer" />
+    </form>
     <footer class="footer">
       <div class="footer-top">
         <div class="footer-left">✉ Réalisé par : Charles Bélanger</div>
