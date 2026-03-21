@@ -317,3 +317,8 @@ hr {
   text-decoration: none;
   margin-top: 15px;
 }
+
+a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
