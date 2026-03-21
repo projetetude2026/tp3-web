@@ -1,6 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f3f3f3;
+  background-color: #c4bcbc;
   color: #111;
 }
 
@@ -9,6 +9,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 25px 60px;
+  background-color: rgb(2, 35, 85);
 }
 
 .logo {
