@@ -1,10 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f3f3f3;
-  background-image: url(src/mer-ocean.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   color: #111;
 }
 
@@ -38,6 +34,7 @@ nav a.active {
   justify-content: space-between;
   padding: 60px;
   gap: 60px;
+  
 }
 
 .hero-text {
